@@ -1,0 +1,19 @@
+/* Global aka Desktop View */
+h1 {
+  color: limegreen;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Tablet View */
+@media (max-width: 786px) {
+  h1 {
+    color: orange;
+  }
+}
+
+/* Tablet View */
+@media (max-width: 500px) {
+  h1 {
+    color: black;
+  }
+}
