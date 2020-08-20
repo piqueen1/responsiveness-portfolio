@@ -1,19 +1,47 @@
 /* Global aka Desktop View */
-h1 {
-  color: limegreen;
-  font-family: "Courier New", Courier, monospace;
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: rgb(28, 28, 212);
+  min-height: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  background-color: beige;
+  min-height: 200px;
+  width: 30%;
+  margin-bottom: 40px;
+}
+
+.hide-desktop-only {
+  display: none;
 }
 
 /* Tablet View */
 @media (max-width: 786px) {
-  h1 {
-    color: orange;
+  .col {
+    width: 45%;
+  }
+
+  .hide-desktop-only {
+    display: block;
   }
 }
 
-/* Tablet View */
+/* Mobile View */
 @media (max-width: 500px) {
-  h1 {
-    color: black;
+  .col {
+    width: 100%;
+  }
+
+  .hide-mobile {
+    display: none;
   }
 }
