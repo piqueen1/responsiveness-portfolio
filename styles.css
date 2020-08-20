@@ -14,14 +14,17 @@ body {
 }
 
 .col {
-  background-color: beige;
-  min-height: 200px;
   width: 30%;
   margin-bottom: 40px;
 }
 
 .hide-desktop-only {
   display: none;
+}
+
+.col img {
+  width: 100%;
+  height: auto;
 }
 
 /* Tablet View */
